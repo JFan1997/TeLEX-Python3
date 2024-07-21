@@ -12,11 +12,8 @@ Temporal Logic Extractor
 Installation Instructions 
 ==========================
 
-1. Conda (Recommended and Updated for Python 3.12)
-
-
 -----------------------------------------
-1. Conda
+1. Conda (Recommended and Updated for Python 3.12)
 -----------------------------------------
 
 1) Get hold of Conda: 
@@ -31,7 +28,8 @@ conda create -n telex python==3.12
 3) Once the "telex" environment is present in your environment, you can activate it by:
 > source activate telex
 
-4) pip install -r requirements.txt 
+4) Install the required packages:
+>pip install -r requirements.txt 
 
 5) Add TeLEX home to your PYTHONPATH environment variable; illustrative example:
 >(telex) jha@sjlinux1:~/projects/TeLEX$ export PYTHONPATH=$PWD
