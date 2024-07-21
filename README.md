@@ -1,16 +1,19 @@
 
-# TeLEX
+# TeLEX-Python3 
+
+This is the Python3 version of TeLEX that all source code are updated to Python 3.12.
+The original project is [TeLEX project](https://github.com/susmitjha/TeLEX.git) source code to Python3 version
+
+
+
 Temporal Logic Extractor
 
 ==========================
 Installation Instructions 
 ==========================
 
-1. Conda (Recommended)
+1. Conda (Recommended and Updated for Python 3.12)
 
-2. Virtualbox 
-
-3. Plain old simple method
 
 -----------------------------------------
 1. Conda
@@ -22,31 +25,22 @@ http://conda.pydata.org/docs/install/full.html
 > bash Anaconda-latest-Linux-x86_64.sh
 
 2) Use the yml file in repository to setup environment for TeLEX
-> conda env create -f telex.yml
-
-This will create an environment named "telex" in your conda. Verify this by running: 
-> conda env list
-
-You should see a list of environments with "telex" in it; illustrative example:
->\# conda environments:
-
->\#
-
->telex                    /home/jha/anaconda2/envs/telex
-
->root                  *  /home/jha/anaconda2
+> conda env create telex
+conda create -n telex python==3.12
 
 3) Once the "telex" environment is present in your environment, you can activate it by:
 > source activate telex
 
-4) Add TeLEX home to your PYTHONPATH environment variable; illustrative example:
+4) pip install -r requirements.txt 
+
+5) Add TeLEX home to your PYTHONPATH environment variable; illustrative example:
 >(telex) jha@sjlinux1:~/projects/TeLEX$ export PYTHONPATH=$PWD
 
 >(telex) jha@sjlinux1:~/projects/TeLEX$ echo $PYTHONPATH
 
 >/home/jha/projects/TeLEX
 
-4) Go to tests folder and run "python test_learn.py" to check if all tests pass and TeLEX is installed.
+6) Go to tests folder and run "python test_learn.py" to check if all tests pass and TeLEX is installed.
 >(telex) jha@sjlinux1:~/projects/TeLEX$ cd tests/
 
 >(telex) jha@sjlinux1:~/projects/TeLEX/tests$ python test_learn.py 
@@ -54,10 +48,6 @@ You should see a list of environments with "telex" in it; illustrative example:
 or run it as a pytest script, if you have pytest 
 
 > (telex) jha@sjlinux1:~/projects/TeLEX/tests$ pytest test_learn.py 
-
------------------------------------------
-2. Virtualbox
------------------------------------------
 
 
 -----------------------------------------
